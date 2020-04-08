@@ -164,13 +164,13 @@ export default class ItemsToApprove extends LightningElement {
       if (result) {
         evt = new ShowToastEvent({
           title: "Approve",
-          message: "承認申請を承認しました。",
+          message: "This itmes is approved.",
           variant: this.variant
         });
       } else {
         evt = new ShowToastEvent({
           title: "Approve",
-          message: "承認申請を承認した際にエラーが発生しました。",
+          message: "Error occourd while approving this item.",
           variant: this.variant
         }).catch((error) => {
           console.log(error);
@@ -193,13 +193,13 @@ export default class ItemsToApprove extends LightningElement {
         if (result) {
           evt = new ShowToastEvent({
             title: "Reject",
-            message: "承認申請を却下しました。",
+            message: "This item is rejected",
             variant: this.variant
           });
         } else {
           evt = new ShowToastEvent({
             title: "Approve",
-            message: "承認申請を承認した際にエラーが発生しました。",
+            message: "Error occourd while approving this item.",
             variant: this.variant
           });
         }
