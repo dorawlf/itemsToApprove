@@ -1,2 +1,3 @@
 # itemsToApprove
-items to approve lwc
+items to approve Lightning Web Component.
+Avaiable in community.
